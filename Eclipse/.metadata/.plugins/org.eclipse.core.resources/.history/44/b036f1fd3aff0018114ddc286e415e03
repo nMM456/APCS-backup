@@ -1,7 +1,7 @@
 
 public class Desktop extends Computer {
 	private final int POWER;
-//OK RETARD, FIX THE FINAL THING. IT DOESNT WORK YOU CHANGE IT IN THE CONSTRUCTOR YOU FUCKING MORON
+
 	public Desktop(String name, int price, boolean internet, String brand, int POWER) {
 		super(name, price, internet, brand);
 		this.POWER = POWER;
