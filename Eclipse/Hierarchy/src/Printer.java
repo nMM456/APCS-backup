@@ -8,7 +8,7 @@ public class Printer extends Device {
 	public String printPage(int pages) {
 		if (paper >= pages) {
 			paper -= pages;
-			return "You know have "+paper+" pages left";
+			return "You printed out " + pages + " pages of paper. You now have "+paper+" pages left";
 		}
 		else {
 			return "Not enough paper.";
@@ -18,10 +18,10 @@ public class Printer extends Device {
 		return paper;
 	}
 	public String Fax(String num) {
-		return "Sent a Fax to " + num;
+		return "You sent a Fax to " + num;
 	}
 	public String helpPewDiePie() {
-		return "Printed out Subscribe to PewDiePie flyer. You did your part!";
+		return "You Printed out a subscribe to PewDiePie flyer. You did your part!";
 	}
 	@Override
 	public String toString() {

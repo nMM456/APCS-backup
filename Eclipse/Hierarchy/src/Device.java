@@ -31,7 +31,7 @@ public abstract class Device implements Comparable<Device> {
 	}
 	@Override
 	public String toString() {
-		return "Device #"+devicesCreated+"\n"+name+"\n$" + price +"\nHas Internet:" + internet;
+		return name+"\n$" + price +"\nHas Internet:" + internet;
 	}
 	
 }
