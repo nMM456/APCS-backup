@@ -1,0 +1,9 @@
+
+public class Microcenter {
+
+	public static void main(String[] args) {
+		System.out.println("Nicholas Markou AP CS Inheritance Project")
+
+	}
+
+}

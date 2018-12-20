@@ -25,8 +25,7 @@ public class Printer extends Device {
 	}
 	@Override
 	public String toString() {
-		return "Name: " + super.getName() + "\n" + "Price" + super.getPrice()
-		+ "\n" + "Has internet: " + super.hasInternet() + "\n" + "Paper: " + paper;
+		return super.toString() + "\nPaper:" + paper;
 	}
 
 }

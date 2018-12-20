@@ -34,6 +34,10 @@ public abstract class Computer extends Device {
 		if (sub = cpu.getSub()) return true;
 		else return false;
 	}
+	@Override
+	public String toString() {
+		return super.toString() + "\nBrand: "+ brand + "\nSubscribed: "+ sub;
+	}
 	
 
 }

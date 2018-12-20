@@ -1,0 +1,22 @@
+
+public class Microcenter {
+
+	public static void main(String[] args) {
+		System.out.println("Nicholas Markou AP CS Inheritance Project");
+		//Alias
+		Device[] aCoolArray = new Device[5];
+		Device[] Devices = aCoolArray;
+		//PRINTER OBJECT
+		Devices[0] = new Printer("HP LaserJet", 99, true, 200);
+		Devices[0].helpPewDiePie();
+		((Printer)Devices[0]).Fax("508-836-7723");
+		((Printer)Devices[0]).printPage(13);
+		
+		//DESKTOP OBJECT
+		Devices[1] = new Desktop("Omen", 999, true, "HP", 450);
+		Devices[1].helpPewDiePie();
+		
+		
+	}
+
+}

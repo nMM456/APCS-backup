@@ -1,5 +1,5 @@
 
-public abstract class Device {
+public abstract class Device implements Comparable<Device> {
 	private int price;
 	private String name;
 	private boolean internet;
@@ -24,9 +24,14 @@ public abstract class Device {
 	public boolean hasInternet() {
 		return internet;
 	}
+	public int compareTo(Device device) {
+		if (price < device.getPrice()) return -1;
+		else if (price == device.getPrice()) return 0;
+		else return 1;
+	}
 	@Override
 	public String toString() {
-		return name+", $" + price +", Has Internet:" + internet;
+		return "Device #"+devicesCreated+"\n"+name+"\n$" + price +"\nHas Internet:" + internet;
 	}
 	
 }

@@ -32,6 +32,13 @@ public class Tablet extends Computer implements Touchscreen{
 		}
 		else return "You didn't have internet access so you couldn't help him.";
 	}
+
+	public String useTouchscreen() {
+		return "You touched the screen and opened up a web browser.";
+	}
+	public String toString() {
+		return super.toString() + "\nScreen Pressure: " + pressure + "\nPixels: "  + pixels;
+	}
 	
 
 }

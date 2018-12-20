@@ -1,0 +1,12 @@
+
+public class Microcenter {
+
+	public static void main(String[] args) {
+		System.out.println("Nicholas Markou AP CS Inheritance Project");
+		Device[] aCoolArray = new Device[10];
+		Device[] Devices = aCoolArray;
+		Devices[0] = new Printer("HP LaserJet", 99, true, 200);
+
+	}
+
+}

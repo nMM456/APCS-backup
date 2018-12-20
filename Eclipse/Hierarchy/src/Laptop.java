@@ -12,5 +12,9 @@ public class Laptop extends Computer {
 	public String Game() {
 		return "You tried to play a game, but your laptop overheated.";
 	}
+	@Override
+	public String toString() {
+		return super.toString() + "\nScreen Size: " + screen;
+	}
 	
 }
