@@ -5,22 +5,23 @@ public class Printer extends Device {
 		super(name, price, internet);
 		this.paper = paper;
 	}
-	public void printPage(int pages) {
+	public String printPage(int pages) {
 		if (paper >= pages) {
 			paper -= pages;
+			return "You know have "+paper+" pages left";
 		}
 		else {
-			System.out.println("Not enough paper.");
+			return "Not enough paper.";
 		}
 	}
 	public int getPaper() {
 		return paper;
 	}
-	public void Fax(String num) {
-		System.out.println("Sent a fax to " + num);
+	public String Fax(String num) {
+		return "Sent a Fax to " + num;
 	}
-	public void SubToPewDiePie() {
-		System.out.println("Printed out Subscribe to PewDiePie flyer.");
+	public String helpPewDiePie() {
+		return "Printed out Subscribe to PewDiePie flyer. You did your part!";
 	}
 	@Override
 	public String toString() {

@@ -1,0 +1,14 @@
+
+public class Desktop extends Computer {
+	private int power;
+	public Desktop(String name, int price, boolean internet, String brand, int power) {
+		super(name, price, internet, brand);
+		this.power = power;
+	}
+	public int Efficiency() {
+//		Scale of 1-10, 1 being unefficient, 10 being efficient based on power usage.
+		return power/10;
+	}
+	
+
+}

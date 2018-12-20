@@ -1,7 +1,7 @@
 
 public class Tablet extends Computer implements Touchscreen{
-	private int pixels;
-	private int pressure;
+	private final int pixels;
+	private final int pressure;
 	
 	public Tablet(String name, int price, boolean internet, String brand, int pixels, int pressure) {
 		super(name, price, internet, brand);
@@ -23,6 +23,14 @@ public class Tablet extends Computer implements Touchscreen{
 		else {
 			return "You looked at a friends photo on FaceBook.";
 		}
+	}
+	@Override
+	public String helpPewDiePie() {
+		if (hasInternet()) {
+			setSub(true);
+			return "You opened up the YouTube App and subscribed to PewDiePie.";
+		}
+		else return "You didn't have internet access so you couldn't help him.";
 	}
 	
 

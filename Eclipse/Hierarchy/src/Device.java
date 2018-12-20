@@ -14,6 +14,7 @@ public abstract class Device {
 	public static int deviceCount() {
 		return devicesCreated;
 	}
+	public abstract String helpPewDiePie();
 	public int getPrice() {
 		return price;
 	}
@@ -27,8 +28,5 @@ public abstract class Device {
 	public String toString() {
 		return name+", $" + price +", Has Internet:" + internet;
 	}
-	
-	
-	
 	
 }
