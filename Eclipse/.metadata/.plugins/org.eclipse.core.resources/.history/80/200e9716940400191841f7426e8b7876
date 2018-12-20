@@ -4,6 +4,7 @@ public abstract class Device {
 	private String name;
 	private boolean internet;
 	private static int devicesCreated = 0;
+	private boolean isOn;
 	
 	public Device(String name, int price, boolean internet) {
 		this.name = name;
