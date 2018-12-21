@@ -18,7 +18,7 @@ public class Desktop extends Computer {
 	 * @return power/10  how efficient a device is based on power inputted before
 	 */
 	private int Efficiency() {
-//		Rating of efficiency is found by its power divided by 10.
+//		Scale of 1-10, 1 being unefficient, 10 being efficient based on power usage.
 		return power/10;
 	}
 	/**

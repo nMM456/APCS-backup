@@ -1,7 +1,6 @@
 
 public abstract class Computer extends Device {
 	private String brand;
-//	sub is if you are subscribed to PewDiePie, which is either true or false.
 	private boolean sub;
 	/**
 	 * 

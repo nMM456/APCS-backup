@@ -1,13 +1,6 @@
 
 public class Printer extends Device {
 	private int paper;
-	/**
-	 * 
-	 * @param name  name of printer
-	 * @param price  price of printer
-	 * @param internet  does the printer have internet
-	 * @param paper  how much paper can it hold
-	 */
 	public Printer(String name, int price, boolean internet, int paper) {
 		super(name, price, internet);
 		this.paper = paper;

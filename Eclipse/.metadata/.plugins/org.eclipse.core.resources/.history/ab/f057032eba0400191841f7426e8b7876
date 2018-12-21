@@ -28,7 +28,7 @@ public class Microcenter {
 		System.out.println(((Laptop)Devices[2]).Game());
 		System.out.println();
 		
-		//TWO IN ONE LAPTOP OBJECT
+		//TWO IN ONE LAPTOP
 		Devices[3] = new TwoInOneLaptop("Inspirion 2-in-1", 750, true, "Dell", 14, 2160, 256);
 		System.out.println(Devices[3].getName());
 		System.out.println(Devices[3].helpPewDiePie());
@@ -36,7 +36,7 @@ public class Microcenter {
 		System.out.println(((TwoInOneLaptop)Devices[3]).Game());
 		System.out.println();
 		
-		//TABLET OBJECT
+		//TABLET
 		Devices[4] = new Tablet("iPad", 1899, true, "Apple", 2160, 512);
 		System.out.println(Devices[4].getName());
 		System.out.println(Devices[4].helpPewDiePie());
