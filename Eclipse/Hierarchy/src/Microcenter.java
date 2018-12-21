@@ -46,12 +46,16 @@ public class Microcenter {
 		System.out.println();
 		
 		//Comparing
-		System.out.println("Which costs more, "+Devices[3].getName()+" or "+Devices[4].getName()+"?");
-		int compareValue = Devices[3].compareTo(Devices[4]);
-		if (compareValue == -1) System.out.println("The "+Devices[3].getName() + " Costs more.");
+		System.out.println("Which costs more, "+Devices[2].getName()+" or "+Devices[3].getName()+"?");
+		int compareValue = Devices[2].compareTo(Devices[3]);
+		if (compareValue == -1) System.out.println("The "+Devices[3].getName() + " costs more.");
 		else if (compareValue == 0) System.out.println("They cost the same.");
-		else System.out.println("The "+Devices[4].getName() +" Costs more.");
+		else System.out.println("The "+Devices[2].getName() +" Costs more.");
 		System.out.println();
+		
+		//Equals
+		System.out.println("Are both devices "+Devices[2].getName()+" and " + Devices[3].getName()+" subcribed?");
+		System.out.println(((Computer)Devices[2]).equals(((Computer)Devices[3])));
 		
 		//Information about each Device
 		System.out.println("Devices created: " + Device.deviceCount()+"\n");

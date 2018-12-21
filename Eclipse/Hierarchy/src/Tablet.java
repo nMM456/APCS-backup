@@ -3,7 +3,7 @@ public class Tablet extends Computer implements Touchscreen{
 	private final int pixels;
 	private final int pressure;
 	/**
-	 * 
+	 * Constructor
 	 * @param name  name of tablet
 	 * @param price  price of the tablet
 	 * @param internet  does the tablet have internet
@@ -24,7 +24,7 @@ public class Tablet extends Computer implements Touchscreen{
 		return pressure;
 	}
 	/**
-	 * 
+	 * Use social media
 	 * @return String using social media and what you do.
 	 */
 	public String socialMedia() {

@@ -4,7 +4,7 @@ public class TwoInOneLaptop extends Laptop implements Touchscreen {
 	private int pressure;
 	private int pixels;
 	/**
-	 * 
+	 * Constructor
 	 * @param name  name of the laptop
 	 * @param price  price of the laptop
 	 * @param internet  does the laptop have internet

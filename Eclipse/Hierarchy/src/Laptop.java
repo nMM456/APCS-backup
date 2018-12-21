@@ -2,7 +2,7 @@
 public class Laptop extends Computer {
 	private int screen; // Screen size
 	/**
-	 * 
+	 * Constructor
 	 * @param name  name of laptop
 	 * @param price  price of laptop
 	 * @param internet  does the laptop have internet
@@ -14,7 +14,7 @@ public class Laptop extends Computer {
 		this.screen = screen;
 	}
 	/**
-	 * 
+	 * Returns screen value
 	 * @return screen  the length of the screen
 	 */
 	public int getScreen() {

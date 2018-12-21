@@ -2,7 +2,7 @@
 public class Desktop extends Computer {
 	private int power;
 	/**
-	 * 
+	 * Constructor
 	 * @param name  name of the desktop
 	 * @param price  price of the desktop
 	 * @param internet  does the desktop have internet
@@ -14,7 +14,7 @@ public class Desktop extends Computer {
 		this.power = power;
 	}
 	/**
-	 * 
+	 * Returns an int on how efficient a computer is
 	 * @return power/10  how efficient a device is based on power inputted before
 	 */
 	private int Efficiency() {
@@ -22,7 +22,7 @@ public class Desktop extends Computer {
 		return power/10;
 	}
 	/**
-	 * 
+	 * Returns efficiency value
 	 * @return returns efficiency value
 	 */
 	public int getEfficiency() {

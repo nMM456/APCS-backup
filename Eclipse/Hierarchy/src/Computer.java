@@ -31,14 +31,14 @@ public abstract class Computer extends Device {
 		return num1+num2;
 	}
 	/**
-	 * 
+	 * Play a really cool game
 	 * @return String  states you played a game.
 	 */
 	public String Game() {
 		return "You played a game";
 	}
 	/**
-	 * 
+	 * Set boolean if you subcribed to PewDiePie
 	 * @param sub  boolean if you have subscribed to PewDiePie
 	 */
 	public void setSub(boolean sub) {
@@ -52,19 +52,19 @@ public abstract class Computer extends Device {
 		else return "You didn't have internet access so you created a text document telling people to subcribe to PewDiePie.";
 	}
 	/**
-	 * 
+	 * Get boolean if you are subscribed or not
 	 * @return sub  returns boolean if you subscribed to pewdiepie
 	 */
 	public boolean getSub() {
 		return sub;
 	}
 	/**
-	 * 
+	 * Return boolean if two devices are subcribed
 	 * @param cpu  computer object
 	 * @return boolean  if they are both subscribed or not it will return true, otherwise false.
 	 */
 	public boolean equals(Computer cpu) {
-		if (sub = cpu.getSub()) return true;
+		if (sub && cpu.getSub()) return true;
 		else return false;
 	}
 	@Override
