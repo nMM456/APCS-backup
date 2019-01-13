@@ -3,7 +3,7 @@ public class Bot {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		testing github with eclipse
+//		testing github with eclips
 	}
 
 }
