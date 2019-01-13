@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.net.URL"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="ZipCode"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.events.message.MessageReceivedEvent"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.JDABuilder"/>
+<fullyQualifiedTypeName name="javax.security.auth.login.LoginException"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.hooks.ListenerAdapter"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.ChannelType"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.JDA"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.MessageChannel"/>
 </qualifiedTypeNameHistroy>
