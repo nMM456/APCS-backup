@@ -10,7 +10,7 @@ class Osu():
     #commands for this module go here, in this class
     @commands.command()
     async def pp(self, ctx, user):
-        url = "https://osu.ppy.sh/api/get_user?k=05005dbb7c9d80d3ceb6459862df14bb81d391b2&u="
+        url = "https://osu.ppy.sh/api/get_user?k=KEY&u="
         url += user
         data = str(urllib.request.urlopen(url).read())
         data = data[3:len(data)-2]
