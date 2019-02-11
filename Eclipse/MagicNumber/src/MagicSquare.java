@@ -3,6 +3,7 @@ public class MagicSquare {
 	private int sideLength;
 	private int[][] Square;
 	public MagicSquare(int side) {
+		if(side<3) side=3;
 		if(side%2 == 0) side++;
 		sideLength = side;
 		Square = new int [sideLength][sideLength];
