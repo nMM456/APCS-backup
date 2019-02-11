@@ -7,11 +7,13 @@ public class MagicSquare {
 		if(side%2 == 0) side++;
 		sideLength = side;
 		Square = new int [sideLength][sideLength];
-//		ACTUALLY MAKE THE CONSTRUCTOR MAKE THE SQUARE LULW
+		int mid = (side+1)/2-1;
+		Square[0][mid]=1;
 	}
 	public MagicSquare() {
 		sideLength = 3;
 		Square = new int[sideLength][sideLength];
+		
 //		MAKE THE CONSTRUCTOR MAKE THE SQUARE LULW
 	}
 	public int getSum() {
