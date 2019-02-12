@@ -1,35 +1,35 @@
 
 public class MagicSquare {
-	private int sideLength;
 	private int[][] Square;
 	public MagicSquare(int side) {
-		int currentBlock = 1;
+		int currentBlock = 0;
 		if(side<3) side=3;
 		if(side%2 == 0) side++;
-		sideLength = side;
-		Square = new int [sideLength][sideLength];
+		Square = new int [side][side];
 		int x=0;
 		int y = (side+1)/2-1;
-		Square[x][y]=currentBlock;
-			while (currentBlock<sideLength*sideLength) {
-				x--;
-				y++;
-				if (x<0) x = sideLength-1;
-				if (y>sideLength-1) y = y-sideLength;
-				if (Square[x][y] != 0) {
-					x=x+2;
-					y--;
-					if (y>sideLength) y = 0;
-				}
-				currentBlock++;
-				Square[x][y] = currentBlock;
+		while (currentBlock<side*side) {
+			System.out.println("Block: "+currentBlock);
+			System.out.println("X: "+x);
+			System.out.println("Y: "+y);
+			Square[x][y] = currentBlock;
+			x--;
+			y++;
+			if (x<0) x = side-1;
+			if (y>side-1) y = y-side;
+			if (Square[x][y] != 0) {
+				x=x+2;
+				y--;
+				if (y>side) y = 0;
 			}
+			currentBlock++;
+		}
 	}
 	public MagicSquare() {
 		this(3);
-		
-//		MAKE THE CONSTRUCTOR MAKE THE SQUARE LULW
 	}
+//	public boolean validSquare() {
+//	}
 	public int getSum() {
 		int sum = 0;
 		for(int i:Square[0]) {
@@ -39,7 +39,18 @@ public class MagicSquare {
 	}
 	
 	public int getSize() {
-		return sideLength;
+		return Square.length;
+	}
+	@Override
+	public String toString() {
+		String message = "";
+		for (int i=0;i<Square.length;i++) {
+			for (int k=0;k<Square[i].length;k++) {
+				message += Square[i][k] + "|";
+			}
+			System.out.println();
+		}
+		return message;
 	}
 
 }
