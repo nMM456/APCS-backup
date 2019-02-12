@@ -19,7 +19,7 @@ public class MagicSquareTester {
 		System.out.println("A Magic square of size "+ square.getSize() + " has a magic sum of " + square.getSum());
 		System.out.println(square);
 		
-		//Check if valid magic square
+		Check if valid magic square
 		String val="";
 		if(!square.validSquare())
 			val="NOT";
