@@ -2,16 +2,16 @@
 public class MagicSquare {
 	private int[][] Square;
 	public MagicSquare(int side) {
-		int currentBlock = 0;
+		int currentBlock = 1;
 		if(side<3) side=3;
 		if(side%2 == 0) side++;
 		Square = new int [side][side];
 		int x=0;
 		int y = (side+1)/2-1;
-		while (currentBlock<side*side) {
-			System.out.println("Block: "+currentBlock);
-			System.out.println("X: "+x);
-			System.out.println("Y: "+y);
+		while (currentBlock<=side*side) {
+//			System.out.println("Block: "+currentBlock);
+//			System.out.println("X: "+x);
+//			System.out.println("Y: "+y);
 			Square[x][y] = currentBlock;
 			x--;
 			y++;
@@ -20,9 +20,11 @@ public class MagicSquare {
 			if (Square[x][y] != 0) {
 				x=x+2;
 				y--;
-				if (y>side) y = 0;
+				if (y<0) y = 0;
+				if (x>side-1) x = x - side;
 			}
 			currentBlock++;
+			
 		}
 	}
 	public MagicSquare() {
@@ -46,9 +48,8 @@ public class MagicSquare {
 		String message = "";
 		for (int i=0;i<Square.length;i++) {
 			for (int k=0;k<Square[i].length;k++) {
-				message += Square[i][k] + "|";
+				message += Square[i][k] + "|\t";
 			}
-			System.out.println();
 		}
 		return message;
 	}
