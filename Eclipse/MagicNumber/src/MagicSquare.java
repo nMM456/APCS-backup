@@ -1,31 +1,43 @@
 public class MagicSquare {
 	private int[][] square;
+	/**
+	 * Constructor that creates a magic square based off of the number of sides inputted. 
+	 * @param side Length of one side of the square
+	 */
 	public MagicSquare(int side) {
 		int currentBlock = 1;
 		if(side<3) side=3;
 		if(side%2 == 0) side++;
 		square = new int [side][side];
-		int x=0;
-		int y = (side+1)/2-1;
+		int i = 0;
+		int k = (side+1)/2-1;
+//		Loop to go through each available block in the square and set the correct value
 		while (currentBlock<=side*side) {
-			square[x][y] = currentBlock;
-			x--;
-			y++;
-			if (x<0) x = x+side;
-			if (y>side-1) y = y-side;
-			if (square[x][y] != 0) {
-				x=x+2;
-				y--;
-				if (y<0) y = y+side;
-				if (x>side-1) x = x - side;
+			square[i][k] = currentBlock;
+			i--;
+			k++;
+			if (i<0) i = i+side;
+			if (k>side-1) k = k-side;
+			if (square[i][k] != 0) {
+				i=i+2;
+				k--;
+				if (k<0) k = k+side;
+				if (i>side-1) i = i - side;
 			}
 			currentBlock++;
 			
 		}
 	}
+	/**
+	 * No arg constructor. Uses the above constructor with the parameter set as 3.
+	 */
 	public MagicSquare() {
 		this(3);
 	}
+	/**
+	 * Checks if the created square is valid by adding up each line and comparing the sums.
+	 * @return true if all the sums are equal to its correct value or false if its incorrect
+	 */
 	public boolean validSquare() {
 		int sum=getSum();
 		int currentTotal=0;
@@ -47,16 +59,21 @@ public class MagicSquare {
 		}
 //		Diagonal, top left
 		for (int i=0;i<square.length;i++) {
-			currentTotal = square[i][i];
+			currentTotal = currentTotal+ square[i][i];
 		}
 		if (currentTotal != sum) return false;
 		else currentTotal = 0;
-		for (int i=sum-1;i>0;i--) {
-			currentTotal = currentTotal+square[i][i];
+//		Other diagonal
+		for (int i=0;i<square.length;i++) {
+			currentTotal = currentTotal+square[i][square.length-i-1];
 		}
 		if (currentTotal != sum) return false;
-		else return true;
+		return true;
 	}
+	/**
+	 * gets the sum of the square from one row.
+	 * @return the sum of one row
+	 */
 	public int getSum() {
 		int sum = 0;
 		for(int i:square[0]) {
@@ -64,14 +81,21 @@ public class MagicSquare {
 		}
 		return sum;
 	}
-	
+	/**
+	 * Gets the length of the square
+	 * @return the length of one side of the square
+	 */
 	public int getSize() {
 		return square.length;
 	}
+	/**
+	 * Returns the a string with a square of values from the array
+	 */
 	@Override
 	public String toString() {
 		String message = "";
 		int count=1;
+//		count variable used to add a new line for the correct length of the square.
 			for (int[] i:square) {
 				for (int k:i) {
 					if (count==getSize()) {
