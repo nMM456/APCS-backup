@@ -9,18 +9,15 @@ public class MagicSquare {
 		int x=0;
 		int y = (side+1)/2-1;
 		while (currentBlock<=side*side) {
-//			System.out.println("Block: "+currentBlock);
-//			System.out.println("X: "+x);
-//			System.out.println("Y: "+y);
 			Square[x][y] = currentBlock;
 			x--;
 			y++;
-			if (x<0) x = side-1;
+			if (x<0) x = x+side;
 			if (y>side-1) y = y-side;
 			if (Square[x][y] != 0) {
 				x=x+2;
 				y--;
-				if (y<0) y = 0;
+				if (y<0) y = y+side;
 				if (x>side-1) x = x - side;
 			}
 			currentBlock++;
@@ -46,9 +43,15 @@ public class MagicSquare {
 	@Override
 	public String toString() {
 		String message = "";
+		int count=1;
 		for (int i=0;i<Square.length;i++) {
 			for (int k=0;k<Square[i].length;k++) {
-				message += Square[i][k] + "|\t";
+				if (count==getSize()) {
+					message += Square[i][k] + "|\n";
+					count=0;
+				}
+				else message += Square[i][k] + "|";
+				count++;
 			}
 		}
 		return message;
