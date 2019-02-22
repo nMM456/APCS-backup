@@ -57,7 +57,7 @@ public class MagicSquare {
 			if (currentTotal != sum) return false;
 			else currentTotal = 0;
 		}
-//		Diagonal, top left
+//		Diagonal
 		for (int i=0;i<square.length;i++) {
 			currentTotal = currentTotal+ square[i][i];
 		}
