@@ -3,6 +3,12 @@
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\MagicNumber"/>
 	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
 	<section name="NewWizardAction">
+		<item value="org.python.pydev.ui.wizards.project.PythonProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.python.pydev.PythonCategory"/>
+		</list>
 	</section>
 </section>
