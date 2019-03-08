@@ -56,7 +56,19 @@ public class Sort
    **/
   public static void insertionSort(int[] aSort)
   {
-
+      for (int x=1;x< aSort.length;x++) {
+          for (int y=0;y<x;y++) {
+              if (aSort[x]<aSort[y]) {
+                  int temp = aSort[y];
+                  aSort[y] = aSort[x];
+                  for (int z=y+1;z<=x;z++) {
+                      int temp2 = aSort[z];
+                      aSort[z] = temp;
+                      temp = temp2;
+                  }
+              }
+          }
+      }
   }
   
   /************************
