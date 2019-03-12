@@ -84,7 +84,15 @@ public class Sort
    **/
   public static void selectionSort(int[] aSort)
   {
-
+	  for (int i=0;i<aSort.length;i++) {	
+		for (int k=i;k<aSort.length;k++) {
+			if (aSort[i]>aSort[k]) {
+				int var=aSort[i];
+				aSort[i]=aSort[k];
+				aSort[k] = var;
+			}
+		}
+	}
   }
   
   /************************
@@ -104,7 +112,9 @@ public class Sort
     //Sort the entire list using a recursive merge sort method
     doMergeSort(aSort, 0, aSort.length-1);
   }
-  
+  private static void doMergeSort(int[] arr, int i, int length) {
+	  
+  }
   /************************
    * Implements Quick Sort recursively
    *  1.Divide into two sublists, < and > a pivot value
@@ -120,6 +130,9 @@ public class Sort
   {
     //Sort the entire list using the recursive merge sort method
     doQuickSort(aSort, 0, aSort.length-1);
+  }
+  private static void doQuickSort(int[] arr, int i, int length) {
+	  
   }
   
   
