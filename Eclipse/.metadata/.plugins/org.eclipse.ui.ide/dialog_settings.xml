@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\Sort_Project"/>
 		<item value="C:\Users\Nicholas\git\Phil_Swift_Discord"/>
 		<item value="C:\Users\Nicholas\git\apcs-final-farewell"/>
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\MagicNumber"/>

@@ -7,7 +7,7 @@
  * All Sort methods are static
  * All Sort helper methods are private
  * 
- * @author 
+ * @author Nicholas Markou
  *
  *******************************************************************/
 public class Sort
@@ -28,15 +28,15 @@ public class Sort
   {
 	boolean run=true;
 	int k=0;
-	int var;
+	int num;
 	while (run) {
 		k++;
 		run=false;
 		for (int i=0;i<aSort.length-k;i++) {
 			if (aSort[i] > aSort[i+1]) {
-				var = aSort[i];
+				num = aSort[i];
 				aSort[i] = aSort[i+1];
-				aSort[i+1] = var;
+				aSort[i+1] = num;
 				run=true;
 				}
 			}
@@ -56,15 +56,15 @@ public class Sort
    **/
   public static void insertionSort(int[] aSort)
   {
-      for (int x=1;x< aSort.length;x++) {
-          for (int y=0;y<x;y++) {
-              if (aSort[x]<aSort[y]) {
-                  int temp = aSort[y];
-                  aSort[y] = aSort[x];
-                  for (int z=y+1;z<=x;z++) {
-                      int temp2 = aSort[z];
-                      aSort[z] = temp;
-                      temp = temp2;
+      for (int i=1;i<aSort.length;i++) {
+          for (int j=0;j<i;j++) {
+              if (aSort[i]<aSort[j]) {
+                  int temp = aSort[j];
+                  aSort[j] = aSort[i];
+                  for (int k=j+1;k<=i;k++) {
+                      int otherTemp = aSort[k];
+                      aSort[k] = temp;
+                      temp = otherTemp;
                   }
               }
           }
