@@ -10,7 +10,13 @@ public class client {
 			arr[i] = (int)(Math.random()*num);
 		}
 	}
-	
+	private static void allSorts(int[][] arr) {
+		Sort.bubbleSort(arr[0]);
+		Sort.insertionSort(arr[1]);
+		Sort.selectionSort(arr[2]);
+		Sort.mergeSort(arr[3]);
+		Sort.quickSort(arr[4]);
+	}
 	
 	
 	public static void main(String[] args) {
@@ -38,6 +44,24 @@ public class client {
 		System.out.println("\nSelection sort: ");
 		for (int i:selection) {
 			System.out.print(i+" ");
+		}
+//		Do recursive sorts here next.
+//		test searches here
+		int[][] oneK = new int[5][1000];
+		for (int[] i: oneK) {
+			randomArr(i, i.length);
+		}
+		int[][] fiveK = new int[5][5000];
+		for (int[] i: fiveK) {
+			randomArr(i, i.length);
+		}
+		int[][] tenK = new int[5][10000];
+		for (int[] i: tenK) {
+			randomArr(i, i.length);
+		}
+		int[][] fiftyK = new int[5][50000];
+		for (int[] i: fiftyK) {
+			randomArr(i, i.length);
 		}
 	}
 
