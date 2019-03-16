@@ -26,10 +26,10 @@ public class Sort
    **/
   public static void bubbleSort(int[] aSort)
   {
-	boolean run=true;
 	int k=0;
 	int num;
-	while (run) {
+	boolean run=true;
+	while (run==true) {
 		k++;
 		run=false;
 		for (int i=0;i<aSort.length-k;i++) {
@@ -84,16 +84,18 @@ public class Sort
    **/
   public static void selectionSort(int[] aSort)
   {
-	  for (int i=0;i<aSort.length;i++) {	
-		for (int k=i;k<aSort.length;k++) {
-			if (aSort[i]>aSort[k]) {
-				int var=aSort[i];
-				aSort[i]=aSort[k];
-				aSort[k] = var;
-			}
-		}
-	}
-  }
+	  for (int i=0;i<aSort.length;i++) {
+		  int min=i;
+		  for (int k=i;k<aSort.length;k++) {
+			  if (aSort[min]>aSort[k]) {
+				  min=k;
+				  }
+			  }
+		  int temp = aSort[i];
+		  aSort[i]=aSort[min];
+		  aSort[min] = temp;
+		  }
+	  }  
   
   /************************
    * Implements Merge Sort recursively
@@ -112,8 +114,40 @@ public class Sort
     //Sort the entire list using a recursive merge sort method
     doMergeSort(aSort, 0, aSort.length-1);
   }
-  private static void doMergeSort(int[] arr, int i, int length) {
-	  
+  private static void doMergeSort(int[] arr, int start, int end) {
+	  if (start < end) {
+		  int mid = (start + end)/2;
+		  doMergeSort(arr, start, mid);
+		  doMergeSort(arr, mid+1, end);
+		  int[] secondArr = new int[end-start+1];
+		  int firstIndex = start;
+		  int secondIndex = mid+1;
+		  int tempIndex = 0;
+		  while (firstIndex <= mid && secondIndex <= end) {
+			  if (arr[firstIndex] < arr[secondIndex]) {
+				  secondArr[tempIndex] = arr[firstIndex];
+				  firstIndex++;
+			  }
+			  else {
+				  secondArr[tempIndex] = arr[secondIndex];
+				  secondIndex++;
+			  }
+			  tempIndex++;
+		  }
+		  while (firstIndex <= mid) {
+			  secondArr[tempIndex] = arr[firstIndex];
+			  firstIndex++;
+			  tempIndex++;
+		  }
+		  while (secondIndex <= end) {
+			  secondArr[tempIndex] = arr[secondIndex];
+			  secondIndex++;
+			  tempIndex++;
+		  }
+		  for (tempIndex=0;tempIndex<secondArr.length;tempIndex++) {
+			  arr[start+tempIndex] = secondArr[tempIndex];
+		  }
+	  }
   }
   /************************
    * Implements Quick Sort recursively
@@ -128,13 +162,31 @@ public class Sort
    **/
   public static void quickSort(int[] aSort)
   {
-    //Sort the entire list using the recursive merge sort method
+    //Sort the entire list using the recursive quick sort method
     doQuickSort(aSort, 0, aSort.length-1);
   }
-  private static void doQuickSort(int[] arr, int i, int length) {
-	  
+  private static void doQuickSort(int[] arr, int start, int end) {
+	  if (start < end) {
+		  int mid = partition(arr, start, end);
+		  doQuickSort(arr, start, mid);
+		  doQuickSort(arr, mid+1, end);
+	  }
   }
-  
-  
-  
+  private static int partition(int[] arr, int start, int end) {
+	  int pivot = arr[(start+end)/2];
+	  int i = start - 1;
+	  int k = end + 1;
+	  while (true) {
+		  i++;
+		  while (arr[i] < pivot) i++;
+		  k--;
+		  while (arr[k] > pivot) k--;
+		  if (i<k) {
+			  int temp = arr[i];
+			  arr[i] = arr[k];
+			  arr[k] = temp;
+		  }
+		  else return k;
+	  }
+  }
 }
