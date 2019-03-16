@@ -1,5 +1,5 @@
 
-public class client {
+public class Client {
 	/**
 	 * Fills array with random integers from -20 to 20.
 	 * @param arr list to be filled with integers
