@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="apcsshortanswer/src"/>
+	<classpathentry kind="src" path="APCSsummer/src"/>
+	<classpathentry kind="src" path="barCodeProj/src"/>
+	<classpathentry kind="src" path="hi there/src"/>
+	<classpathentry kind="src" path="Hierarchy/src"/>
+	<classpathentry kind="src" path="javadict/src"/>
+	<classpathentry kind="src" path="MagicNumber/src"/>
+	<classpathentry kind="src" path="magpie/src"/>
+	<classpathentry kind="src" path="math/src/math"/>
+	<classpathentry kind="src" path="parameters/src"/>
+	<classpathentry kind="src" path="pizza/src"/>
+	<classpathentry kind="src" path="SchoolArrayList/src"/>
+	<classpathentry kind="src" path="Sort_Project/src"/>
+	<classpathentry kind="src" path="zipCodeOBJ/src"/>
+	<classpathentry kind="output" path="APCSsummer/bin"/>
+</classpath>
