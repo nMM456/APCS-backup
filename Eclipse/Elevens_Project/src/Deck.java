@@ -12,7 +12,7 @@ public class Deck {
 	 * cards contains all the cards in the deck.
 	 */
 	private List<Card> cards;
-
+	private List<Card> dealt;
 	/**
 	 * size is the number of not-yet-dealt cards.
 	 * Cards are dealt from the top (highest index) down.
@@ -31,6 +31,11 @@ public class Deck {
 	 */
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		for (int i=0;i<ranks.length;i++) {
+			Card card = new Card(ranks[i], suits[i], values[i]);
+			cards.add(card);
+		}
+		
 	}
 
 
@@ -40,6 +45,8 @@ public class Deck {
 	 */
 	public boolean isEmpty() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		if (cards.size()==0) return true;
+		return false;
 	}
 
 	/**
@@ -48,6 +55,7 @@ public class Deck {
 	 */
 	public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		return size;
 	}
 
 	/**
@@ -65,6 +73,12 @@ public class Deck {
 	 */
 	public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		Card lastCard = cards.remove(cards.size()-1);
+		dealt.add(lastCard);
+		size--;
+		return lastCard;
+		
+		
 	}
 
 	/**
