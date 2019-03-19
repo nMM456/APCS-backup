@@ -2,12 +2,18 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="http://" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="https://"/>
+			<item value="player"/>
+			<item value="Cog"/>
+			<item value="freeze_support"/>
+			<item value="freeze"/>
+			<item value="freeze_support()"/>
 			<item value="fucking"/>
 			<item value="disney"/>
 			<item value="mrkt,"/>
@@ -17,13 +23,15 @@
 			<item value="arrCount"/>
 		</list>
 		<list key="replacehistory">
+			<item value="http://"/>
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="313" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|8.842105|0|WINDOWS|1|-14|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="440" key="DIALOG_HEIGHT"/>
-		<item value="1133" key="DIALOG_X_ORIGIN"/>
-		<item value="412" key="DIALOG_Y_ORIGIN"/>
+		<item value="1667" key="DIALOG_X_ORIGIN"/>
+		<item value="393" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

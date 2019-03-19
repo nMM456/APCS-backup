@@ -21,5 +21,6 @@ public class DeckTester {
 		String[] suits3 = {"Red", "Black", "Red", "Black"};
 		int[] values3  = {13, 8, 7, 10};
 		Deck d3s = new Deck(ranks3, suits3, values3);
+		d1.deal();
 	}
 }

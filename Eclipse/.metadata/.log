@@ -2455,3 +2455,517 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-16 15:36:59.441 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-16 15:37:22.238
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nicholas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-03-16 17:07:34.192
+!MESSAGE Could not delete file C:\Users\Nicholas\git\bancho-server\.git\objects\pack\pack-bf7a59bf2e3739b8601ad1c8e85f043173ea44c8.pack
+!STACK 0
+java.io.IOException: Could not delete file C:\Users\Nicholas\git\bancho-server\.git\objects\pack\pack-bf7a59bf2e3739b8601ad1c8e85f043173ea44c8.pack
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:219)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:186)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:188)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:188)
+	at org.eclipse.egit.ui.internal.repository.tree.command.RemoveCommand.deleteRepositoryContent(RemoveCommand.java:252)
+	at org.eclipse.egit.ui.internal.repository.tree.command.RemoveCommand.access$7(RemoveCommand.java:232)
+	at org.eclipse.egit.ui.internal.repository.tree.command.RemoveCommand$2.runInWorkspace(RemoveCommand.java:174)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-03-16 18:25:41.095
+!MESSAGE Info: Rebuilding internal caches: C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\.metadata\.plugins\org.eclipse.core.resources\.projects\osu\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-03-16 18:30:17.659
+!MESSAGE StringToIntCounterSmallSet size > 8 may be big for its use. Consider using a HashMap<String, Integer>.
+!STACK 0
+java.lang.RuntimeException: StringToIntCounterSmallSet size > 8 may be big for its use. Consider using a HashMap<String, Integer>.
+	at org.python.pydev.shared_core.log.Log.log(Log.java:38)
+	at org.python.pydev.shared_core.structure.StringToIntCounterSmallSet.put(StringToIntCounterSmallSet.java:84)
+	at org.python.pydev.shared_core.structure.StringToIntCounterSmallSet.increment(StringToIntCounterSmallSet.java:58)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitAttribute(AbstractScopeAnalyzerVisitor.java:682)
+	at org.python.pydev.parser.jython.ast.Attribute.accept(Attribute.java:87)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.onVisitCallFunc(AbstractScopeAnalyzerVisitor.java:231)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitCall(AbstractScopeAnalyzerVisitor.java:203)
+	at org.python.pydev.parser.jython.ast.Call.accept(Call.java:123)
+	at org.python.pydev.parser.jython.ast.Dict.traverse(Dict.java:111)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.traverse(AbstractScopeAnalyzerVisitor.java:197)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitDict(VisitorBase.java:220)
+	at org.python.pydev.parser.jython.ast.Dict.accept(Dict.java:96)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitCallAttr(AbstractScopeAnalyzerVisitor.java:812)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitNeededAttributeParts(AbstractScopeAnalyzerVisitor.java:770)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitAttribute(AbstractScopeAnalyzerVisitor.java:685)
+	at org.python.pydev.parser.jython.ast.Attribute.accept(Attribute.java:87)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.onVisitCallFunc(AbstractScopeAnalyzerVisitor.java:231)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitCall(AbstractScopeAnalyzerVisitor.java:203)
+	at org.python.pydev.parser.jython.ast.Call.accept(Call.java:123)
+	at org.python.pydev.parser.jython.ast.Expr.traverse(Expr.java:77)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.traverse(AbstractScopeAnalyzerVisitor.java:197)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitExpr(VisitorBase.java:166)
+	at org.python.pydev.parser.jython.ast.Expr.accept(Expr.java:71)
+	at org.python.pydev.parser.jython.ast.TryFinally.traverse(TryFinally.java:96)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.traverse(AbstractScopeAnalyzerVisitor.java:197)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitTryFinally(VisitorBase.java:124)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitTryFinally(AbstractScopeAnalyzerVisitor.java:896)
+	at org.python.pydev.parser.jython.ast.TryFinally.accept(TryFinally.java:88)
+	at org.python.pydev.parser.jython.ast.If.traverse(If.java:107)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.traverse(AbstractScopeAnalyzerVisitor.java:197)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitIf(VisitorBase.java:100)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.visitIf(AbstractScopeAnalyzerVisitor.java:869)
+	at org.python.pydev.parser.jython.ast.If.accept(If.java:96)
+	at org.python.pydev.parser.jython.ast.Module.traverse(Module.java:87)
+	at com.python.pydev.analysis.scopeanalysis.AbstractScopeAnalyzerVisitor.traverse(AbstractScopeAnalyzerVisitor.java:197)
+	at org.python.pydev.parser.jython.ast.VisitorBase.visitModule(VisitorBase.java:10)
+	at org.python.pydev.parser.jython.ast.Module.accept(Module.java:79)
+	at com.python.pydev.analysis.refactoring.wizards.rename.AbstractRenameRefactorProcess.getOccurrencesWithScopeAnalyzer(AbstractRenameRefactorProcess.java:284)
+	at com.python.pydev.analysis.refactoring.wizards.rename.PyRenameAnyLocalProcess.getOccurrences(PyRenameAnyLocalProcess.java:52)
+	at com.python.pydev.analysis.refactoring.wizards.rename.PyRenameAnyLocalProcess.findReferencesToRenameOnLocalScope(PyRenameAnyLocalProcess.java:42)
+	at com.python.pydev.analysis.refactoring.wizards.rename.AbstractRenameRefactorProcess.findReferencesToRename(AbstractRenameRefactorProcess.java:193)
+	at com.python.pydev.analysis.refactoring.wizards.rename.PyReferenceSearcher.search(PyReferenceSearcher.java:152)
+	at com.python.pydev.refactoring.markoccurrences.MarkOccurrencesJob.createRequest(MarkOccurrencesJob.java:151)
+	at org.python.pydev.shared_ui.mark_occurrences.BaseMarkOccurrencesJob.run(BaseMarkOccurrencesJob.java:168)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 1 1 2019-03-16 18:30:47.904
+!MESSAGE Not saving ast manager for: P/osu. No write area available.
+!SESSION 2019-03-17 17:03:51.666 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-17 17:04:08.441
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nicholas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-17 20:16:23.602 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-17 20:16:32.982
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nicholas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2019-03-18 15:46:04.327 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-18 15:46:21.750
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nicholas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.python.pydev.shared_core 2 2 2019-03-18 17:25:11.735
+!MESSAGE Warning: computed 14801 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 14801 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:213)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.python.pydev.shared_core 2 2 2019-03-18 17:26:12.059
+!MESSAGE Warning: computed 14801 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 14801 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:213)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.python.pydev.shared_core 2 2 2019-03-18 18:06:26.319
+!MESSAGE Warning: computed 13304 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:command qualifier:co isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 13304 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:command qualifier:co isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:213)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.python.pydev.shared_core 2 2 2019-03-18 18:11:38.258
+!MESSAGE Warning: computed 14801 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 14801 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:213)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.python.pydev.shared_core 2 2 2019-03-18 18:11:39.868
+!MESSAGE Warning: computed 17296 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken: qualifier:es isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 17296 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\git\Phil_Swift_Discord\modules\Misc.py activationToken: qualifier:es isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:213)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.python.pydev.shared_core 2 2 2019-03-18 18:19:57.566
+!MESSAGE Warning: computed 14802 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\discord_test\run.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 14802 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\discord_test\run.py activationToken:ctx qualifier:se isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:213)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+
+!ENTRY org.python.pydev.shared_core 4 4 2019-03-18 19:45:34.798
+!MESSAGE Unable to read contents from: C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\.metadata\.plugins\org.python.pydev\v1_4405ns3bgak0sps4zplk9j97o\shell\bui_u4ttbnyvm6xp2wunnmmilohq.top
+!STACK 0
+java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.util.zip.InflaterInputStream.fill(Unknown Source)
+	at java.util.zip.InflaterInputStream.read(Unknown Source)
+	at java.util.zip.GZIPInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.ObjectInputStream$PeekInputStream.read(Unknown Source)
+	at java.io.ObjectInputStream$PeekInputStream.readFully(Unknown Source)
+	at java.io.ObjectInputStream$BlockDataInputStream.readShort(Unknown Source)
+	at java.io.ObjectInputStream.readStreamHeader(Unknown Source)
+	at java.io.ObjectInputStream.<init>(Unknown Source)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.getCached(CompiledModule.java:309)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:160)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:351)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:1)
+	at org.python.pydev.ast.codecompletion.revisited.ProjectModulesManager.getModuleAndRelatedModulesManager(ProjectModulesManager.java:201)
+	at org.python.pydev.ast.codecompletion.revisited.ProjectModulesManager.getModule(ProjectModulesManager.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getModule(AbstractASTManager.java:582)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.internalFindGlobalTokDef(SourceModule.java:1295)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findGlobalTokDef(SourceModule.java:1165)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinitionsFromModAndTok(SourceModule.java:1108)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:1090)
+	at org.python.pydev.ast.codecompletion.revisited.modules.SourceModule.findDefinition(SourceModule.java:758)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:79)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getSelfOrClsCompletions(PyCodeCompletion.java:871)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getSelfOrClsCompletions(PyCodeCompletion.java:793)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.doTokenCompletion(PyCodeCompletion.java:676)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getCompletionFromFuncDefReturn(AbstractASTManager.java:233)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getCompletionsFromDefinition(AssignAnalysis.java:202)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:84)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getSelfOrClsCompletions(PyCodeCompletion.java:871)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getSelfOrClsCompletions(PyCodeCompletion.java:793)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.doTokenCompletion(PyCodeCompletion.java:676)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getCompletionFromFuncDefReturn(AbstractASTManager.java:233)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getCompletionsFromDefinition(AssignAnalysis.java:202)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:84)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getAssignCompletions(AbstractASTManager.java:1647)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:932)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:694)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:663)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getNonFunctionDefCompletionsFromAssign(AssignAnalysis.java:454)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getCompletionsFromDefinition(AssignAnalysis.java:206)
+	at org.python.pydev.ast.codecompletion.revisited.AssignAnalysis.getAssignCompletions(AssignAnalysis.java:84)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getAssignCompletions(AbstractASTManager.java:1647)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.internalGenerateGetCompletionsForModule(AbstractASTManager.java:932)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:694)
+	at org.python.pydev.ast.codecompletion.revisited.AbstractASTManager.getCompletionsForModule(AbstractASTManager.java:663)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.doTokenCompletion(PyCodeCompletion.java:689)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:180)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2012)
+	at java.util.Collections$SingletonSet.forEach(Unknown Source)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2011)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2008)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:561)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:491)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:486)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3933)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3564)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:628)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:563)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:151)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:199)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:391)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:595)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1501)
+!SESSION 2019-03-19 14:55:56.541 -----------------------------------------------
+eclipse.buildId=4.9.0.I20180906-0745
+java.version=1.8.0_152
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-03-19 14:56:23.779
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nicholas'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
