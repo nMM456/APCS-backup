@@ -61,6 +61,7 @@ public class Shuffler {
 	 */
 	public static void perfectShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		
 	}
 
 	/**
@@ -76,5 +77,12 @@ public class Shuffler {
 	 */
 	public static void selectionShuffle(int[] values) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
+		int[] shuffled = new int[52];
+		Deck d1 = new Deck(null, null, shuffled);
+		while (true) {
+			if (d1.get((int)(Math.random())*51).isEmpty()) {
+				
+			}
+		}
 	}
 }
