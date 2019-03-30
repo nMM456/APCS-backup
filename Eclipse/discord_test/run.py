@@ -1,20 +1,23 @@
 import discord
 from discord.ext import commands
 import asyncio
-import os
-from urllib.request import urlretrieve
-import requests
+import datetime
 
 
 bot = commands.Bot(command_prefix="??", description="Full time cheater")
 @bot.event
 async def on_ready():
     print("Logged in")
-    await bot.change_presence(activity=discord.Game(name='STUPID FUCKING MISTAKES MAN'))
-#     server = bot.get_guild(340656542544035841)
-#     gulag = bot.get_guild(557203706118930462)
-#     for i in server.emojis:
-#         r = requests.get(i.url, allow_redirects=True)
-#         await gulag.create_custom_emoji(name=i.name, image=r.content)
+    await bot.change_presence(activity=discord.Game(name='GO AGANE'))
+
+async def background_task():
+    await bot.wait_until_ready()
+    time = bot.get_channel(561686318501986314)
+    while (not bot.is_closed()):
+        cd = datetime.datetime.now()
+        await time.edit(name=str(cd.strftime("%I:%M:%S %p")))
+        await asyncio.sleep(.9)
+
         
+bot.loop.create_task(background_task())
 bot.run("")
