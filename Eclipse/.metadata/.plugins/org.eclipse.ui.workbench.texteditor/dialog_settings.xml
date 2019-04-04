@@ -2,12 +2,19 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="http://" key="selection"/>
+		<item value="TODO" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="todo"/>
+			<item value="to do"/>
+			<item value="print"/>
+			<item value="printCards"/>
+			<item value="printcards"/>
+			<item value="containspair"/>
+			<item value="dealMyCards"/>
 			<item value="https://"/>
 			<item value="player"/>
 			<item value="Cog"/>
@@ -16,11 +23,6 @@
 			<item value="freeze_support()"/>
 			<item value="fucking"/>
 			<item value="disney"/>
-			<item value="mrkt,"/>
-			<item value="68623"/>
-			<item value="RAPID"/>
-			<item value="marke"/>
-			<item value="arrCount"/>
 		</list>
 		<list key="replacehistory">
 			<item value="http://"/>
