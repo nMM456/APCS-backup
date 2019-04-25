@@ -32,11 +32,12 @@ public class Deck {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		cards = new ArrayList<Card>();
 		for (int i=0;i<ranks.length;i++) {
-			Card card = new Card(ranks[i], suits[i], values[i]);
-			cards.add(card);
+			for (int k=0;k<suits.length;k++) {
+				cards.add(new Card(ranks[i], suits[k], values[i]));
+			}
 		}
 		size=cards.size();
-		
+		shuffle();
 	}
 
 
@@ -65,14 +66,13 @@ public class Deck {
 	 */
 	public void shuffle() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-		for (int k=51;k<51;k++) {
-			int r = (int)(Math.random())*k;
+		for (int k=cards.size()-1;k>=0;k--) {
+			int r = (int)(Math.random()*(k+1));
 			Card temp = cards.get(k);
-			cards.add(k, cards.get(r));
-			cards.remove(k+1);
-			cards.add(r, temp);
-			cards.remove(r+1);
+			cards.set(k, cards.get(r));
+			cards.set(r, temp);
 		}
+		size=cards.size();
 	}
 
 	/**
@@ -82,9 +82,11 @@ public class Deck {
 	 */
 	public Card deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
-		Card lastCard = cards.get(size-1);
-		size--;
-		return lastCard;
+		if (size>0) {
+			size--;
+			return cards.get(size);
+		}
+		else return null;
 		
 		
 	}
