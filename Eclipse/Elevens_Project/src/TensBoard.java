@@ -44,9 +44,9 @@ public class TensBoard extends Board {
 
 	/**
 	 * Determines if the selected cards form a valid group for removal.
-	 * In Elevens, the legal groups are (1) a pair of non-face cards
-	 * whose values add to 11, and (2) a group of three cards consisting of
-	 * a jack, a queen, and a king in some order.
+	 * In Tens, the legal groups are (1) a pair of non-face cards
+	 * whose values add to 10, and (2) a group of four cards consisting of
+	 * a jack, a queen, a king and a ten in some order.
 	 * @param selectedCards the list of the indices of the selected cards.
 	 * @return true if the selected cards form a valid group for removal;
 	 *         false otherwise.
@@ -61,9 +61,9 @@ public class TensBoard extends Board {
 
 	/**
 	 * Determine if there are any legal plays left on the board.
-	 * In Elevens, there is a legal play if the board contains
-	 * (1) a pair of non-face cards whose values add to 11, or (2) a group
-	 * of three cards consisting of a jack, a queen, and a king in some order.
+	 * In Tens, there is a legal play if the board contains
+	 * (1) a pair of non-face cards whose values add to 10, or (2) a group
+	 * of four cards consisting of a jack, a queen, a king and a ten in some order.
 	 * @return true if there is a legal play left on the board;
 	 *         false otherwise.
 	 */
@@ -76,14 +76,14 @@ public class TensBoard extends Board {
 	}
 
 	/**
-	 * Check for an 11-pair in the selected cards.
+	 * Check for an 10-pair in the selected cards.
 	 * @param selectedCards selects a subset of this board.  It is list
 	 *                      of indexes into this board that are searched
-	 *                      to find an 11-pair.
+	 *                      to find an 10-pair.
 	 * @return true if the board entries in selectedCards
-	 *              contain an 11-pair; false otherwise.
+	 *              contain an 10-pair; false otherwise.
 	 */
-	private boolean containsPairSum10(List<Integer> selectedCards) {
+	protected boolean containsPairSum10(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 		for (int i=0;i<selectedCards.size()-1;i++) {
 			for (int k=i+1;k<selectedCards.size();k++) {
@@ -94,14 +94,14 @@ public class TensBoard extends Board {
 	}
 
 	/**
-	 * Check for a JQK in the selected cards.
+	 * Check for a quartet in the selected cards.
 	 * @param selectedCards selects a subset of this board.  It is list
 	 *                      of indexes into this board that are searched
-	 *                      to find a JQK group.
+	 *                      to find a quartet group.
 	 * @return true if the board entries in selectedCards
-	 *              include a jack, a queen, and a king; false otherwise.
+	 *              include a jack, a queen, a king and a ten; false otherwise.
 	 */
-	private boolean containsQuartet(List<Integer> selectedCards) {
+	protected boolean containsQuartet(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 		boolean jack=false;
 		boolean queen=false;

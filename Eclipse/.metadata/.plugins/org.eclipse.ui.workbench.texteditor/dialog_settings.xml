@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="TODO" key="selection"/>
+		<item value="import java.util.List;" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="import java.util.List;"/>
+			<item value="cardAt"/>
+			<item value="cardIndexes"/>
 			<item value="todo"/>
 			<item value="to do"/>
 			<item value="print"/>
@@ -20,9 +23,6 @@
 			<item value="Cog"/>
 			<item value="freeze_support"/>
 			<item value="freeze"/>
-			<item value="freeze_support()"/>
-			<item value="fucking"/>
-			<item value="disney"/>
 		</list>
 		<list key="replacehistory">
 			<item value="http://"/>
