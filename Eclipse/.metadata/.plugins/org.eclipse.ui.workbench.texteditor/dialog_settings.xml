@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="import java.util.List;" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="any part of this page is illegal."/>
+			<item value="GO ON TO THE NEXT PAGE."/>
+			<item value="Unauthorized copying or reuse of"/>
 			<item value="import java.util.List;"/>
 			<item value="cardAt"/>
 			<item value="cardIndexes"/>
@@ -20,13 +23,10 @@
 			<item value="dealMyCards"/>
 			<item value="https://"/>
 			<item value="player"/>
-			<item value="Cog"/>
-			<item value="freeze_support"/>
-			<item value="freeze"/>
 		</list>
 		<list key="replacehistory">
-			<item value="http://"/>
 			<item value=""/>
+			<item value="http://"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
