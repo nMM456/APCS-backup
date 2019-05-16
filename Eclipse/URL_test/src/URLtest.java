@@ -15,7 +15,9 @@ public class URLtest {
 		String data="";
 		BufferedReader read = new BufferedReader(new InputStreamReader(OWL.openStream()));
 		while (read.ready()) data = read.readLine();
-		System.out.println(data);
+		int index = data.indexOf("name");
+		int index2 = data.indexOf("primaryColor");
+		System.out.println(data.substring(index+7, index2-3));
 	}
 
 }
