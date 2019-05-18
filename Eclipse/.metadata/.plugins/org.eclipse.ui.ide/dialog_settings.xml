@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\AP_Exam_Practice"/>
+		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\URL_test"/>
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\Elevens_Project"/>
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\Sort_Project"/>
 		<item value="C:\Users\Nicholas\git\Phil_Swift_Discord"/>
@@ -10,8 +12,9 @@
 	<section name="ExternalProjectImportWizard">
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.python.pydev.ui.wizards.project.PythonProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.python.pydev.PythonCategory"/>
 		</list>
 	</section>
