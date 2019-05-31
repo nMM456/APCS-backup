@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="niceName" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="niceName"/>
+			<item value="name"/>
 			<item value="any part of this page is illegal."/>
 			<item value="GO ON TO THE NEXT PAGE."/>
 			<item value="Unauthorized copying or reuse of"/>
@@ -21,8 +23,6 @@
 			<item value="printcards"/>
 			<item value="containspair"/>
 			<item value="dealMyCards"/>
-			<item value="https://"/>
-			<item value="player"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

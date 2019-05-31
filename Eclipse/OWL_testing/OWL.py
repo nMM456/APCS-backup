@@ -1,8 +1,11 @@
 import requests
 
 url = 'https://api.overwatchleague.com/stats/players'
+print(url)
 url_get = requests.get(url)
+print("requested")
 data = url_get.json()
+print("json loaded")
 f = open("stats.csv", "w")
 for i in data["data"][0]:
     if str(i) != "time_played_total":
