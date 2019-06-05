@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\Nicholas\Desktop\pircbot-1.5.0" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\weather\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\weather" key="org.eclipse.jdt.ui.last.external.project"/>
 	<item value="0" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="updateSimilarElements"/>
