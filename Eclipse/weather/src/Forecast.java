@@ -7,10 +7,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class Forecast {
-<<<<<<< HEAD
-	public static void main(String[] args) {
-		
-=======
 	public static void main(String[] args) throws IOException {
 	    ArrayList<String> alerts = forecast();
 	    for (String i: alerts) {
@@ -38,6 +34,5 @@ public class Forecast {
 	    	alerts.add(JSONAlert.getJSONObject(i).getJSONObject("properties").getString("description"));
 	    }
 	    return alerts;
->>>>>>> branch 'master' of https://github.com/nMM456/APCS-backup.git
 	}
 }
