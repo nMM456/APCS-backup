@@ -8,31 +8,20 @@ import org.json.JSONObject;
 
 public class Forecast {
 	public static void main(String[] args) throws IOException {
-	    ArrayList<String> alerts = forecast();
-	    for (String i: alerts) {
-	    	System.out.println(i);
-	    }
-	}
-	/**
-	 * Gets every alert on the weather API then returns an arraylist
-	 * with string with the description of each alert
-	 * Runs very slowly.
-	 * @return ArrayList<String> description of alerts
-	 * @throws IOException
-	 */
-	public static ArrayList<String> forecast() throws IOException {
-		ArrayList<String> alerts = new ArrayList<String>();
-	    String s = "https://api.weather.gov/alerts/active";
-	    URL url = new URL(s);
+	    URL url = new URL("https://api.weather.gov/points/42.2695,-71.6161/forecast");
 	    Scanner scan = new Scanner(url.openStream());
-	    String str = new String();
+	    String str = "";
 	    while (scan.hasNext())
 	        str += scan.nextLine();
 	    scan.close();
-	    JSONArray JSONAlert = new JSONObject(str).getJSONArray("features");
-	    for (int i=0;i<JSONAlert.length();i++) {
-	    	alerts.add(JSONAlert.getJSONObject(i).getJSONObject("properties").getString("description"));
+//	    Takes data from website and puts it into a string
+//	    Use the string and create a JSONObject to parse the data given.
+	    JSONArray forecast = new JSONObject(str).getJSONObject("properties").getJSONArray("periods");
+	    for (int i=0;i<forecast.length();i++) {
+	    	System.out.println(forecast.getJSONObject(i).getString("name"));
+	    	System.out.println(forecast.getJSONObject(i).getInt("temperature")+" F");
+	    	System.out.println(forecast.getJSONObject(i).getString("detailedForecast"));
+	    	System.out.println("\n");
 	    }
-	    return alerts;
 	}
 }
