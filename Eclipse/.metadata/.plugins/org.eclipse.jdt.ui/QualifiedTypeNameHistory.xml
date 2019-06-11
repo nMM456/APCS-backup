@@ -13,8 +13,16 @@
 <fullyQualifiedTypeName name="net.dv8tion.jda.core.JDA"/>
 <fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.MessageChannel"/>
 <fullyQualifiedTypeName name="java.net.URLEncoder"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.json.JSONObject"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.json.JSONArray"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.Mod"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.eventhandler.SubscribeEvent"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.event.FMLInitializationEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.command.CommandBase"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

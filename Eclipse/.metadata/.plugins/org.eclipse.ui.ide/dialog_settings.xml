@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\mc mod"/>
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\weather"/>
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\AP_Exam_Practice"/>
 		<item value="C:\Users\Nicholas\Documents\GitHub\personal_projects\Eclipse\URL_test"/>
