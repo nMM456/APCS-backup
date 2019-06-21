@@ -1,6 +1,6 @@
 # APCS-backup
 My AP-CS projects and extra work relating to java
 
-maybe you can use this to see what i did for CS projects idk
+2018-2019
 
-i'm just using it as a backup 
+My school year is now over, so I am archiving this repo. Thanks for looking into my repo!
